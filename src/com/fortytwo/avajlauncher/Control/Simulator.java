@@ -102,8 +102,7 @@ public class Simulator {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Incorrect file ("+ filename +") passed: " + e.getMessage());
-            turn = -4;
+		throw new ParseScenarioException("Incorrect file ("+ filename +") passed: " + e.getMessage());
         }
 
         return (turn);
