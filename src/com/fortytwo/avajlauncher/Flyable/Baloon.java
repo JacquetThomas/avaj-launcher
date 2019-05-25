@@ -56,8 +56,4 @@ public class Baloon extends Aircraft implements Flyable {
     public String toString() {
         return ("Baloon#" + super.toString());
     }
-
-    public String toString(String message) {
-        return (this.toString() + ": " + message);
-    }
 }

@@ -1,0 +1,2 @@
+For imbricate try-catch in parse create new exception like simulator exception 
+and just throw new simulation exception with the first exception thrown

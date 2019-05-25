@@ -56,8 +56,4 @@ public class JetPlane extends Aircraft implements Flyable {
     public String toString() {
         return ("JetPlane#" + super.toString());
     }
-
-    public String toString(String message) {
-        return (this.toString() + ": " + message);
-    }
 }

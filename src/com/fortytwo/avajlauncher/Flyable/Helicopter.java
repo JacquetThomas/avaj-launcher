@@ -56,8 +56,4 @@ public class Helicopter extends Aircraft implements Flyable {
     public String toString() {
         return ("Helicopter#" + super.toString());
     }
-
-    public String toString(String message) {
-        return (this.toString() + ": " + message);
-    }
 }

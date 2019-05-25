@@ -8,9 +8,7 @@ public class AircraftFactory {
     public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) throws NegativeCoordinatesException, IncorrectCoordinatesException, IncorrectFlyableTypeException {
         Flyable flyable;
 
-        // Doesn't handle negative coordinate exception
         Coordinates coord = new Coordinates(longitude, latitude, height);
-
         switch (type) {
             case "Helicopter":
                 flyable = new Helicopter(name, coord);
